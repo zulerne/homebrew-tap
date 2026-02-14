@@ -14,22 +14,22 @@ cask "ccost" do
   on_macos do
     on_intel do
       url "https://github.com/zulerne/ccost/releases/download/v#{version}/ccost_#{version}_darwin_amd64.tar.gz"
-      sha256 "ad7f3100ab3a2ae98fa83088dfb5485f5d4f41d2e7f0cc3a59d732e694b04549"
+      sha256 "ed1b53545c721970e571878dd791d6431bf86433e4470978146ce0a8b84499da"
     end
     on_arm do
       url "https://github.com/zulerne/ccost/releases/download/v#{version}/ccost_#{version}_darwin_arm64.tar.gz"
-      sha256 "12c98d3b138ac360818106701b26a2bdbd2265ca61e5e67eb8e1b2ae8bfcb1dd"
+      sha256 "637f6a7487e893c0ce3cd869d392f34fba34375e78569f7385d8b0de254e0f72"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/zulerne/ccost/releases/download/v#{version}/ccost_#{version}_linux_amd64.tar.gz"
-      sha256 "655ee9ffa1fe2083e4e00b0f346b00f99ae1580b85117438e720c4005878540d"
+      sha256 "e996dfd83c0ca5dd31126b06953768b2a7210c67f558a4e82e74941d4509fef8"
     end
     on_arm do
       url "https://github.com/zulerne/ccost/releases/download/v#{version}/ccost_#{version}_linux_arm64.tar.gz"
-      sha256 "6a50cb4d007007f95b86b30de356968719083d6c9f251ae54b06b7a0a1d558b7"
+      sha256 "32b48ae0fcc5ce4bb9c438ce852300c2c3f90df53d7aba7d5bd20bbb9d9cf472"
     end
   end
 
