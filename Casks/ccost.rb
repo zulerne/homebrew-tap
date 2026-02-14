@@ -3,7 +3,7 @@ cask "ccost" do
   name "ccost"
   desc "Fast CLI to analyze Claude Code token usage and costs"
   homepage "https://github.com/zulerne/ccost"
-  version "0.1.0"
+  version "0.1.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "ccost" do
   on_macos do
     on_intel do
       url "https://github.com/zulerne/ccost/releases/download/v#{version}/ccost_#{version}_darwin_amd64.tar.gz"
-      sha256 "13e49be2c3a0d11ed612e1d7f9b1967c555f686b5b31312659a679babc278a11"
+      sha256 "ad7f3100ab3a2ae98fa83088dfb5485f5d4f41d2e7f0cc3a59d732e694b04549"
     end
     on_arm do
       url "https://github.com/zulerne/ccost/releases/download/v#{version}/ccost_#{version}_darwin_arm64.tar.gz"
-      sha256 "4a27c36984ab24a3873dda0b4c97820feeecb5126d06eed4a311277f3f607406"
+      sha256 "12c98d3b138ac360818106701b26a2bdbd2265ca61e5e67eb8e1b2ae8bfcb1dd"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/zulerne/ccost/releases/download/v#{version}/ccost_#{version}_linux_amd64.tar.gz"
-      sha256 "9d1ac777e99fc7e8b19518b47cdd06bd0a4869a374c8d1f0fb9bbdfa7d74497a"
+      sha256 "655ee9ffa1fe2083e4e00b0f346b00f99ae1580b85117438e720c4005878540d"
     end
     on_arm do
       url "https://github.com/zulerne/ccost/releases/download/v#{version}/ccost_#{version}_linux_arm64.tar.gz"
-      sha256 "02820fb5c2d9916dd23401273d5584f4d014c8eb71f8a18eebbc7d0360a27838"
+      sha256 "6a50cb4d007007f95b86b30de356968719083d6c9f251ae54b06b7a0a1d558b7"
     end
   end
 
