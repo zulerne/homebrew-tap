@@ -5,21 +5,21 @@
 class Ccost < Formula
   desc "Fast CLI to analyze Claude Code token usage and costs"
   homepage "https://github.com/zulerne/ccost"
-  version "0.6.0"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zulerne/ccost/releases/download/v0.6.0/ccost_0.6.0_darwin_amd64.tar.gz"
-      sha256 "f186adacdac3e7cbe4afaf0843eacfb885cd84353a73121085c64f9abc35833d"
+      url "https://github.com/zulerne/ccost/releases/download/v0.7.0/ccost_0.7.0_darwin_amd64.tar.gz"
+      sha256 "0882321173db75824cc4e3695f0c26d1049fde7c36f41edeb95bbbe1657dd1d1"
 
       def install
         bin.install "ccost"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zulerne/ccost/releases/download/v0.6.0/ccost_0.6.0_darwin_arm64.tar.gz"
-      sha256 "73bb987ab086a952a472e09070e9e9e449129e803626ffa70cce1fc31f16a08e"
+      url "https://github.com/zulerne/ccost/releases/download/v0.7.0/ccost_0.7.0_darwin_arm64.tar.gz"
+      sha256 "3dddc9e0bfabd5f00e7d5133359cb0b7e43f484d036715d6ce1bc6ca5d33abc9"
 
       def install
         bin.install "ccost"
@@ -29,15 +29,15 @@ class Ccost < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zulerne/ccost/releases/download/v0.6.0/ccost_0.6.0_linux_amd64.tar.gz"
-      sha256 "629487a33400bb065587c9f448bb3c1acac9ae67aa5695808c4c4595883b94f2"
+      url "https://github.com/zulerne/ccost/releases/download/v0.7.0/ccost_0.7.0_linux_amd64.tar.gz"
+      sha256 "77a05db7c13cb8c9e915d602820c588613b5652daeb01c05c81bf5ba7c547b98"
       def install
         bin.install "ccost"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zulerne/ccost/releases/download/v0.6.0/ccost_0.6.0_linux_arm64.tar.gz"
-      sha256 "ec7db2e0ecd6b81245a48aa2d555ed0af0da535ca68997d59e766289ec497bda"
+      url "https://github.com/zulerne/ccost/releases/download/v0.7.0/ccost_0.7.0_linux_arm64.tar.gz"
+      sha256 "8e977acaff71d86024defcacdfdb1557111d532e00b200de4db66b3778adb9ff"
       def install
         bin.install "ccost"
       end
