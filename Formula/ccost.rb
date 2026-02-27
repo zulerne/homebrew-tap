@@ -5,23 +5,23 @@
 class Ccost < Formula
   desc "Fast CLI to analyze Claude Code token usage and costs"
   homepage "https://github.com/zulerne/ccost"
-  version "0.8.3"
+  version "0.8.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zulerne/ccost/releases/download/v0.8.3/ccost_0.8.3_darwin_amd64.tar.gz"
-      sha256 "6bafe2edd201afbf75268b096bc8677d0d7968a1ffc3d69cbdbbf495181e8299"
+      url "https://github.com/zulerne/ccost/releases/download/v0.8.4/ccost_0.8.4_darwin_amd64.tar.gz"
+      sha256 "887330b60a6a2289139dfa05aacb5930ff39b4f963fe427c291b367e5782ee86"
 
-      def install
+      define_method(:install) do
         bin.install "ccost"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zulerne/ccost/releases/download/v0.8.3/ccost_0.8.3_darwin_arm64.tar.gz"
-      sha256 "611a4cf2347d75b1e664a116071604e20c4c289bfbe4087863cff2a4eabdbe91"
+      url "https://github.com/zulerne/ccost/releases/download/v0.8.4/ccost_0.8.4_darwin_arm64.tar.gz"
+      sha256 "bf84afa20b78a111ca49d9a71ddb28675cd80e730bd17fc4a4c15648051867f8"
 
-      def install
+      define_method(:install) do
         bin.install "ccost"
       end
     end
@@ -29,16 +29,16 @@ class Ccost < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zulerne/ccost/releases/download/v0.8.3/ccost_0.8.3_linux_amd64.tar.gz"
-      sha256 "6e20ddb0f603109ad6591f5a846d1e78c184910afb221df7d47ace5040b65067"
-      def install
+      url "https://github.com/zulerne/ccost/releases/download/v0.8.4/ccost_0.8.4_linux_amd64.tar.gz"
+      sha256 "9668fc4018a2ce4939f03876d6b2446378c0545fd81d8c6bca5a9fc24de09bb8"
+      define_method(:install) do
         bin.install "ccost"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zulerne/ccost/releases/download/v0.8.3/ccost_0.8.3_linux_arm64.tar.gz"
-      sha256 "1012dce477f1e835e5044427fa4905e0c884185b5ceb0c23cc6f2f9c8b077c01"
-      def install
+      url "https://github.com/zulerne/ccost/releases/download/v0.8.4/ccost_0.8.4_linux_arm64.tar.gz"
+      sha256 "516d01da3e431cb8f1888b450af56fff3b0d3dad659e432d408ea20510a3f8f4"
+      define_method(:install) do
         bin.install "ccost"
       end
     end
