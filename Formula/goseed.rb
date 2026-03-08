@@ -5,20 +5,20 @@
 class Goseed < Formula
   desc "Scaffold Go projects with best practices"
   homepage "https://github.com/zulerne/goseed"
-  version "0.3.0"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zulerne/goseed/releases/download/v0.3.0/goseed_0.3.0_darwin_amd64.tar.gz"
-      sha256 "00ef89a420577043ca640a6322af814dc0f29854aa9c54d8a9d2efe7b0f76a1f"
+      url "https://github.com/zulerne/goseed/releases/download/v0.4.0/goseed_0.4.0_darwin_amd64.tar.gz"
+      sha256 "e997c6f69d5a5e230fccb94124c4c2113968dd178ba0d96d975bbbdc6380b408"
 
       define_method(:install) do
         bin.install "goseed"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zulerne/goseed/releases/download/v0.3.0/goseed_0.3.0_darwin_arm64.tar.gz"
-      sha256 "c8af6c26a11770d4618656df39a9d106dd6fe73c322f9b289d3e3f46baab798e"
+      url "https://github.com/zulerne/goseed/releases/download/v0.4.0/goseed_0.4.0_darwin_arm64.tar.gz"
+      sha256 "47efdadb982743c38e6302df9dc15efca6d3e95b3518d2480e7028a228c92d9b"
 
       define_method(:install) do
         bin.install "goseed"
@@ -28,15 +28,15 @@ class Goseed < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zulerne/goseed/releases/download/v0.3.0/goseed_0.3.0_linux_amd64.tar.gz"
-      sha256 "7cbba1bfba75c3d4d1070cff667cc72d90c1ae4243ff20e871795d67ffecb85a"
+      url "https://github.com/zulerne/goseed/releases/download/v0.4.0/goseed_0.4.0_linux_amd64.tar.gz"
+      sha256 "7d68eaec74e7a616a7e489cfd77b4119b64824aafaa239ad60ed978c781e83e6"
       define_method(:install) do
         bin.install "goseed"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zulerne/goseed/releases/download/v0.3.0/goseed_0.3.0_linux_arm64.tar.gz"
-      sha256 "c083d8bac895275426d4819af54ce15a58c91d43365e86366a2b61ce1aa6be52"
+      url "https://github.com/zulerne/goseed/releases/download/v0.4.0/goseed_0.4.0_linux_arm64.tar.gz"
+      sha256 "bdd0fc086bfd3b18f83236119b3658bb4bcfcc92a9da31caab0651f77c7fc10d"
       define_method(:install) do
         bin.install "goseed"
       end
