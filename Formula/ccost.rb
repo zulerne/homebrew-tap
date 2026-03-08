@@ -5,21 +5,21 @@
 class Ccost < Formula
   desc "Fast CLI to analyze Claude Code token usage and costs"
   homepage "https://github.com/zulerne/ccost"
-  version "0.8.4"
+  version "0.8.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zulerne/ccost/releases/download/v0.8.4/ccost_0.8.4_darwin_amd64.tar.gz"
-      sha256 "887330b60a6a2289139dfa05aacb5930ff39b4f963fe427c291b367e5782ee86"
+      url "https://github.com/zulerne/ccost/releases/download/v0.8.5/ccost_0.8.5_darwin_amd64.tar.gz"
+      sha256 "5bc582347ea4112738749a9e7b3933e82d64bf277272f0195f64ac506ee83dde"
 
       define_method(:install) do
         bin.install "ccost"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zulerne/ccost/releases/download/v0.8.4/ccost_0.8.4_darwin_arm64.tar.gz"
-      sha256 "bf84afa20b78a111ca49d9a71ddb28675cd80e730bd17fc4a4c15648051867f8"
+      url "https://github.com/zulerne/ccost/releases/download/v0.8.5/ccost_0.8.5_darwin_arm64.tar.gz"
+      sha256 "f951ad80e4695bd0ce0a4ad84f1ea0af4ff7b6dcdcab37d055c6694bc52cd571"
 
       define_method(:install) do
         bin.install "ccost"
@@ -29,15 +29,15 @@ class Ccost < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zulerne/ccost/releases/download/v0.8.4/ccost_0.8.4_linux_amd64.tar.gz"
-      sha256 "9668fc4018a2ce4939f03876d6b2446378c0545fd81d8c6bca5a9fc24de09bb8"
+      url "https://github.com/zulerne/ccost/releases/download/v0.8.5/ccost_0.8.5_linux_amd64.tar.gz"
+      sha256 "bc879097c5d06f78cfa368bc9f59f83e8d2cfadeb58c39798136c2e039e96e71"
       define_method(:install) do
         bin.install "ccost"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zulerne/ccost/releases/download/v0.8.4/ccost_0.8.4_linux_arm64.tar.gz"
-      sha256 "516d01da3e431cb8f1888b450af56fff3b0d3dad659e432d408ea20510a3f8f4"
+      url "https://github.com/zulerne/ccost/releases/download/v0.8.5/ccost_0.8.5_linux_arm64.tar.gz"
+      sha256 "70532cbc9cd05e5bbbe4295b690144261a7e533f89a9214aba8c6b7581917cc9"
       define_method(:install) do
         bin.install "ccost"
       end
